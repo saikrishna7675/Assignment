@@ -1,0 +1,137 @@
+<html>
+  <head>
+    
+    <style>
+      .body{
+
+        margin: 10px;
+        padding: 30px 150px;
+      }
+      .h{
+        background-color:#565051;
+        padding: 10px;
+      }
+table {
+        border: 2px solid black;
+        padding: 20px;
+        margin: 20px;
+      }
+     
+      table tr td {
+        margin: 10px;
+        padding: 10px;
+      }
+      select {
+        width: 200px;
+      }
+      .required {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="bod" onsubmit="aka()" method="POST">
+      <h1 class="h">First Steps Academy Registration Form</h1>
+      <p>All registrations are received an reviewed in a first come,first serve basis.upon filling all open spots,
+additional submissions will be added to our waiting list.</p>
+      <table>
+        <tr>
+          <td colspan="2">
+            <h1 class="h" style="border-bottom: 2px solid blue;"> Before and After school Care Registration
+            </h1>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="idea">Expected Start Date</label>
+          </td>
+          <td><input type="date" name="idea" id="idea" /><br /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="idea">Expected Departure Date</label>
+          </td>
+          <td><input type="date" name="idea" id="idea" /></td>
+        </tr>
+        <tr>
+          <td><label for="sch">School Attending</label></td>
+          <td>
+            <select name="sch" id="sch"><option value="select" id="sch1" selected>select</option>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="grat"> Grade Attending</label><span class="required">*</span>
+          </td>
+          <td>
+            <select name="grade" id="grade" required><option value="1">select</option>
+              </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            What days of the week are you looking for care?<span
+              class="required">*</span>
+          </td>
+          <td>
+            <textarea
+              name="remark"
+              id="remark"
+              cols="30"
+              rows="5"
+              required></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <h1 class="h">Student Information</h1>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="fn">First Name</label><span class="required">*</span>
+          </td>
+          <td>
+            <input type="text" name="fn" id="fn" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="ln">Last Name</label><span class="required">*</span>
+          </td>
+          <td>
+            <input type="text" name="ln" id="ln" required />
+          </td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>
+            Male<input type="radio" name="gen" value="male" required />
+            Female<input type="radio" name="gen" value="Female" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="dob">DOB</label><span class="required">*</span></td>
+          <td>
+            <input type="date" id="dob" required />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="Submit" id="submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
+<script>
+  function aka() {
+    fs = document.getElementById("fn").value;
+    ls = document.getElementById("ln").value;
+    alert("Child Name : " + fs + ls + " is now a part of First Step family ");
+  }
+</script>

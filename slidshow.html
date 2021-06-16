@@ -1,0 +1,58 @@
+<html>
+<head>
+<style>
+    #main{
+          max-width:100%;
+	width:50%;
+        height:50%;
+	margin:0 auto;
+		
+		padding: 10px;
+         }
+
+
+
+img{
+height:auto;
+width:50%;
+}
+
+
+
+</style>
+</head>
+<body>
+       <div id="main">
+       <img src="Screenshot (31).png" id="slideimage">
+</div>
+
+<script>
+function first(){
+            document.getElementById("slideimage").src="Screenshot (32).png";
+             }
+
+function second(){
+            document.getElementById("slideimage").src="Screenshot (33).png";
+             }
+function third(){
+            document.getElementById("slideimage").src="Screenshot (34).png";
+}
+
+function fourth(){
+            document.getElementById("slideimage").src="Screenshot (31).png";
+}
+ 
+
+            setInterval(first,1000);
+            setInterval(second,2000);
+            setInterval(third,3000);
+            setInterval(fourth,4000);
+            
+
+  </script>
+
+
+
+
+</body>
+</html>
